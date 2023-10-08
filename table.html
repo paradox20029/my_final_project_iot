@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Management</title>
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 sidebar">
+                <h2>Smart Lighting IoT</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="light.html">Light</a></li>
+                        <li><a href="graph.html">Graph</a></li>
+                    </ul>
+                </nav>
+            </div>
+    <div class="container">
+        <h1>Device Management</h1>
+        <table id="device-table">
+            <thead>
+                <tr>
+                    <th>Device ID</th>
+                    <th>Device Status</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here dynamically -->
+            </tbody>
+        </table>
+        <button id="add-device-btn">Add Device</button>
+    </div>
+
+    <script src="table.js"></script>
+</body>
+
+</html>

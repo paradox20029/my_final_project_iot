@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Light Control</title>
+    <link rel="stylesheet" href="light.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 sidebar">
+                <h2>Smart Lighting IoT</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="light.html">Light</a></li>
+                        <li><a href="graph.html">Graph</a></li>
+                    </ul>
+                </nav>
+            </div>
+    <div class="container">
+        <h1 class="header">Smart Light Control</h1>
+
+        <div class="circle-container">
+            <div class="circle" id="light-circle"></div>
+            <div class="circle" id="light-circle-1"></div>
+            <div class="circle" id="light-circle-2"></div>
+        </div>
+
+        <div class="controls">
+            <label for="brightness">Brightness:</label>
+            <input type="range" id="brightness" min="0" max="100">
+            <br>
+            <label for="color">Color:</label>
+            <div class="color-options" id="color-options">
+                <label class="color-label" style="background-color: #e74c3c;"></label>
+                <label class="color-label" style="background-color: #3498db;"></label>
+                <label class="color-label" style="background-color: #2ecc71;"></label>
+                <label class="color-label" style="background-color: #f39c12;"></label>
+                <label class="color-label" style="background-color: #9b59b6;"></label>
+                <label class="color-label" style="background-color: #1abc9c;"></label>
+            </div>
+        </div>
+
+        <script src="light.js"></script>
+    </div>
+</body>
+
+</html>
